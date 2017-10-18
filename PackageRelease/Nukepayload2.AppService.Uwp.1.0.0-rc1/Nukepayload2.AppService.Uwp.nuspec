@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Nukepayload2.AppService.Uwp</id>
+    <version>1.0.0-rc1</version>
+    <authors>Nukepayload2</authors>
+    <owners>Nukepayload2</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides support for communication between Uwp and .NET Framework Desktop Bridge apps.
+This package is for Uwp apps.</description>
+    <releaseNotes>Initial commit.</releaseNotes>
+    <copyright>Copyright 2017 Nukepayload2</copyright>
+    <dependencies>
+      <group targetFramework="uap10.0">
+        <dependency id="Nukepayload2.AppService.Core" version="1.0.0-rc1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

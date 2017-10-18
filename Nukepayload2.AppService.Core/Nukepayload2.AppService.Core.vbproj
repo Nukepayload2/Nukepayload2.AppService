@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Authors>Nukepayload2</Authors>
+    <Company>Nukepayload2</Company>
+    <Product>Nukepayload2.AppService</Product>
+    <Description>Provides support for communication between Uwp and .NET Framework Desktop Bridge apps.
+.NET Framework apps should also install Nukepayload2.AppService.Desktop.
+UWP apps ought to install Nukepayload2.AppService.Uwp.
+</Description>
+    <PackageReleaseNotes>Initial commit.</PackageReleaseNotes>
+    <Version>1.0.0-rc1</Version>
+    <Copyright>Copyright 2017 Nukepayload2</Copyright>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.IO" />
+  </ItemGroup>
+
+</Project>

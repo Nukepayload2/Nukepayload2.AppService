@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0725dbb8-9731-4344-b67c-3e404662ed3c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Nukepayload2.AppService.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomMarshal.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)UwpToWin32Connection.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)WinRTConnectionBase.vb" />
+  </ItemGroup>
+</Project>

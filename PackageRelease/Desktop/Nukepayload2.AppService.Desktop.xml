@@ -1,0 +1,82 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Nukepayload2.AppService.Desktop
+</name>
+</assembly>
+<members>
+<member name="T:Nukepayload2.AppService.Desktop.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Nukepayload2.AppService.Desktop.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Nukepayload2.AppService.Desktop.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.InteropServices.AppServiceResponseStatusAndN2AppServiceResponseStatusConverter.AsN2AppServiceResponseStatus(Windows.ApplicationModel.AppService.AppServiceResponseStatus)">
+ <summary>
+ 将 AppServiceResponseStatus 转换成 N2AppServiceResponseStatus
+ </summary>
+ <param name="AppServiceResponseStatusValue">AppServiceResponseStatus</param>
+ <returns>N2AppServiceResponseStatus</returns>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.InteropServices.AppServiceResponseStatusAndN2AppServiceResponseStatusConverter.AsAppServiceResponseStatus(Nukepayload2.AppService.Core.InteropServices.Primitives.AppServiceResponseStatus)">
+ <summary>
+ 将 N2AppServiceResponseStatus 转换成 AppServiceResponseStatus
+ </summary>
+ <param name="N2AppServiceResponseStatusValue">N2AppServiceResponseStatus</param>
+ <returns>AppServiceResponseStatus</returns>
+</member>
+<member name="T:Nukepayload2.AppService.Desktop.UwpToWin32Connection">
+ <summary>
+ 缓存 Win32 端发起的连接，处理 Win32 端发的数据。
+ </summary>
+</member>
+<member name="F:Nukepayload2.AppService.Desktop.UwpToWin32Connection._deferral">
+ <summary>
+ 表示应用服务后台任务的完成情况
+ </summary>
+</member>
+<member name="F:Nukepayload2.AppService.Desktop.UwpToWin32Connection._CurrentTaskInstance">
+ <summary>
+ 当前后台任务
+ </summary>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.UwpToWin32Connection.Run(Windows.ApplicationModel.Background.IBackgroundTaskInstance)">
+ <summary>
+ 后台任务的入口点
+ </summary>
+ <param name="taskInstance">当前后台任务</param>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.UwpToWin32Connection.CurrentTaskInstance_Canceled(Windows.ApplicationModel.Background.IBackgroundTaskInstance,Windows.ApplicationModel.Background.BackgroundTaskCancellationReason)">
+ <summary>
+ 后台任务停止工作。
+ </summary>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.UwpToWin32Connection.AppServiceConnection_ServiceClosed(Windows.ApplicationModel.AppService.AppServiceConnection,Windows.ApplicationModel.AppService.AppServiceClosedEventArgs)">
+ <summary>
+ 处理应用服务被关闭。
+ </summary>
+</member>
+<member name="F:Nukepayload2.AppService.Desktop.WinRTConnectionBase._AppServiceConnection">
+ <summary>
+ 缓存的应用服务连接
+ </summary>
+</member>
+<member name="M:Nukepayload2.AppService.Desktop.WinRTConnectionBase.SendAsync(System.Collections.Generic.IDictionary{System.String,System.Object})">
+ <summary>
+ 使用当前应用连接发送数据。
+ </summary>
+ <param name="data">要发送的数据</param>
+</member>
+</members>
+</doc>
